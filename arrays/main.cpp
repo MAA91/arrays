@@ -8,6 +8,7 @@ void main()
 	const int SIZE = 5;
 	int A[SIZE] = {}, max = 0, min = 0;
 	double sum = 0;
+	cout << "Введите через пробел пять элементов массива: ";
 	for (int i = 0; i < SIZE; i++)
 	{
 		cin >> A[i];
