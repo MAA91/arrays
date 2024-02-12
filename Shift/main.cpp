@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 using namespace std;
 
@@ -7,7 +7,7 @@ void main()
 	setlocale(0, "");
 	const int SIZE = 10;
 	int A[SIZE] = {}, sdvig;
-	cout << "Ââåäèòå ÷èñëî íà êîòîðîå íóæíî âûïîëíèòü ñäâèã: "; cin >> sdvig;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‡Ð¸ÑÐ»Ð¾ Ð½Ð° ÐºÐ¾Ñ‚Ð¾Ñ€Ð¾Ðµ Ð½ÑƒÐ¶Ð½Ð¾ Ð²Ñ‹Ð¿Ð¾Ð»Ð½Ð¸Ñ‚ÑŒ ÑÐ´Ð²Ð¸Ð³: "; cin >> sdvig;
 	A[0] = A[1] = 1;
 	for (int i = 2; i < SIZE; i++)
 		A[i] = A[i - 1] + A[i - 2];
