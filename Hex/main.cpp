@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 using namespace std;
 
@@ -6,7 +6,7 @@ void main()
 {
 	setlocale(0, "");
 	int number;
-	cout << "Ââåäèòå ÷èñëî êîòîðîå íóæíî ïåðåâåñòè â øåñíàöèòåðè÷íûé êîä: "; cin >> number;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‡Ð¸ÑÐ»Ð¾ ÐºÐ¾Ñ‚Ð¾Ñ€Ð¾Ðµ Ð½ÑƒÐ¶Ð½Ð¾ Ð¿ÐµÑ€ÐµÐ²ÐµÑÑ‚Ð¸ Ð² ÑˆÐµÑÐ½Ð°Ñ†Ð¸Ñ‚ÐµÑ€Ð¸Ñ‡Ð½Ñ‹Ð¹ ÐºÐ¾Ð´: "; cin >> number;
 	if (number == 0)
 		cout << "0(10) = 0(16)";
 	else
