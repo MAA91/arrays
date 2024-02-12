@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 using namespace std;
 
@@ -8,7 +8,7 @@ void main()
 	srand(time(NULL));
 	const int SIZE = 10;
 	int A[SIZE] = {}, diapazone_1, diapazone_2;
-	cout << "Ââåäèòå ãàíèöû äèàïàçîíà: "; cin >> diapazone_1 >> diapazone_2;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð³Ð°Ð½Ð¸Ñ†Ñ‹ Ð´Ð¸Ð°Ð¿Ð°Ð·Ð¾Ð½Ð°: "; cin >> diapazone_1 >> diapazone_2;
 	int size = abs(diapazone_1 - diapazone_2) + 1;
 	for (int i = 0; i < SIZE; i++)
 	{
