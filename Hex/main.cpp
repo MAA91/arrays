@@ -8,7 +8,7 @@ void main()
 	int number;
 	cout << "Введите число которое нужно перевести в шеснацитеричный код: "; cin >> number;
 	if (number == 0)
-		cout << "0(10) = 0(16)";
+		cout << "0(10) = 0(16)\n";
 	else
 	{
 		int stepen = 16, num_buf;
