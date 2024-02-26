@@ -15,7 +15,7 @@ void main()
 	{
 		cout << number << "(10) = ";
 		if (number < 0)cout << "-";
-		int num_buf{ abs(number) };
+		int num_buf = abs(number);
 	#ifdef BIN1
 		int stepen{ 2 };
 		bool flag{ false };
