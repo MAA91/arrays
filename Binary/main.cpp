@@ -13,7 +13,7 @@ void main()
 	else
 	{
 		num_buf = abs(number);
-		for (int i = 0; num_buf != 0; i++)
+		for (int i = 0; num_buf != 0; i++, num_buf >>= 1)
 		{
 			A[i] = (num_buf ^ 2) % 2;
 			num_buf /= 2;
