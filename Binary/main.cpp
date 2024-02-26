@@ -6,18 +6,16 @@ using namespace std;
 void main()
 {
 	setlocale(0, "");
-	int number, num_buf, A[32] = {}, size = 0;
+	int number, num_buf, A[32]{}, size{ 0 };
 	cout << "Введите число которое нужно перевести в двоичный код: "; cin >> number;
 	if (number == 0)
 		cout << "0(10) = 0(2)";
 	else
 	{
 		num_buf = abs(number);
-		for (int i = 0; num_buf != 0; i++, num_buf >>= 1)
+		for (int i{ 0 }; num_buf != 0; i++, num_buf >>= 1, size++)
 		{
 			A[i] = (num_buf ^ 2) % 2;
-			num_buf /= 2;
-			size++;
 		}
 		cout << number << "(10) = ";
 		if (number < 0) cout << "- ";
