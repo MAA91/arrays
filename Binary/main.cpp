@@ -1,13 +1,33 @@
 ﻿#include <iostream>
+//#define BIN
 
 using namespace std;
 
 void main()
 {
 	setlocale(0, "");
-	int number;
+	int number, num_buf, A[32] = {}, size = 0;
 	cout << "Введите число которое нужно перевести в двоичный код: "; cin >> number;
+	if (number == 0)
+		cout << "0(10) = 0(2)";
+	else
+	{
+		num_buf = abs(number);
+		for (int i = 0; num_buf != 0; i++)
+		{
+			A[i] = (num_buf ^ 2) % 2;
+			num_buf /= 2;
+			size++;
+		}
+		cout << number << "(10) = ";
+		if (number < 0) cout << "- ";
+		for (int i = 0; i < size; i++)
+			cout << A[size - 1 - i];
+		cout << "(2)\n";
+	}
 
+
+#ifdef BIN
 	if (number == 0)
 		cout << "0(10) = 0(2)";
 	else
@@ -33,4 +53,5 @@ void main()
 		}
 		cout << "(2)";
 	}
+#endif // BIN
 }
