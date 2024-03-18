@@ -32,6 +32,14 @@ int maxValueIn(int A[], int size)
 			max = A[i];
 	return max;
 }
+int minValueIn(int A[], int size)
+{
+	int min = A[0];
+	for (int i = 1; i < size; i++)
+		if (A[i] < min)
+			min = A[i];
+	return min;
+}
 void shiftLeft(int A[], int size, int shifts)
 {
 	for (int i = 0; i < shifts % size; i++)
