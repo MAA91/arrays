@@ -2,6 +2,53 @@
 
 using namespace std;
 
+void FillRand(int A[], int size, int min_zn, int max_zn);
+void FillRand(double A[], int size, double min_zn, double max_zn);
+void FillRand(char A[], int size);
+
+void Print(int A[], int size);
+void Print(double A[], int size);
+void Print(char A[], int size);
+
+int Sum(int A[], int size);
+double Sum(double A[], int size);
+
+double Avg(int A[], int size);
+double Avg(double A[], int size);
+
+int maxValueIn(int A[], int size);
+double maxValueIn(double A[], int size);
+
+int minValueIn(int A[], int size);
+double minValueIn(double A[], int size);
+
+void shiftLeft(int A[], int size, int shifts);
+void shiftLeft(double A[], int size, int shifts);
+void shiftLeft(char A[], int size, int shifts);
+
+void shiftRight(int A[], int size, int shifts);
+void shiftRight(double A[], int size, int shifts);
+void shiftRight(char A[], int size, int shifts);
+
+void main()
+{
+	setlocale(0, "");
+	srand(time(NULL));
+	const int size = 10;
+	//char min_zn, max_zn{};
+	char A[size]{};
+	//cout << "Введите минимальное и максимальное значение: "; cin >> min_zn >> max_zn;
+	FillRand(A, size);
+	Print(A, size);
+	/*cout << Sum(A, size) << endl;
+	cout << Avg(A, size) << endl;*/
+	shiftLeft(A, size, 7);
+	Print(A, size);
+	shiftRight(A, size, 8);
+	Print(A, size);
+	
+}
+
 void FillRand(int A[], int size, int min_zn, int max_zn)
 {
 	for (int i = 0; i < size; i++)
@@ -157,23 +204,4 @@ void shiftRight(char A[], int size, int shifts)
 			A[j] = A[j - 1];
 		A[0] = buf;
 	}
-}
-
-void main()
-{
-	setlocale(0, "");
-	srand(time(NULL));
-	const int size = 10;
-	//char min_zn, max_zn{};
-	char A[size]{};
-	//cout << "Введите минимальное и максимальное значение: "; cin >> min_zn >> max_zn;
-	FillRand(A, size);
-	Print(A, size);
-	/*cout << Sum(A, size) << endl;
-	cout << Avg(A, size) << endl;*/
-	shiftLeft(A, size, 7);
-	Print(A, size);
-	shiftRight(A, size, 8);
-	Print(A, size);
-	
 }
