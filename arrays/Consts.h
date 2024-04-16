@@ -3,4 +3,4 @@
 
 const int ROW = 5;
 const int COL = 5;
-const int SIZE = 10;
+const int SIZE = 100;

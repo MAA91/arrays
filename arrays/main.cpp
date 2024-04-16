@@ -10,15 +10,16 @@
 #include"shiftRight.h"
 #include"Sort.h"
 #include"Unique.h"
-
+#include"Search.h"
 
 void main()
 {
 	setlocale(0, "");
 	srand(time(NULL));
-	int A[ROW][COL]{};
-	Unique(A, ROW, COL, 0, 25);
+	char A[ROW][COL]{};
+	FillRand(A, ROW, COL);
 	Print(A, ROW, COL);
-	Sort(A);
-	cout << endl; Print(A, ROW, COL);
+	Search(A);
+	/*Sort(A);
+	Print(A, ROW, COL);*/
 }
