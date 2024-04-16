@@ -63,7 +63,7 @@ void shiftRight(int A[], int size, int shifts)
 
 void main()
 {
-	//setlocale(0, "");
+	setlocale(0, "");
 	srand(time(NULL));
 	const int size = 10;
 	int min_zn, max_zn{};
