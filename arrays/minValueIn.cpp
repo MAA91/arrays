@@ -1,6 +1,6 @@
 //minValueIn.cpp
 
-#include"Consts.h"
+#include"minValueIn.h"
 
 int minValueIn(int A[], int size)
 {

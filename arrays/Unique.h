@@ -1,5 +1,7 @@
 //Unique.h
 #pragma once
+
+#include"stdafx.h"
 #include"Consts.h"
 
 void Unique(int A[], int size, int min_zn, int max_zn);

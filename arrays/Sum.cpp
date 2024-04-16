@@ -1,6 +1,6 @@
 //Sum.cpp
 
-#include"Consts.h"
+#include"Sum.h"
 
 int Sum(int A[], int size)
 {

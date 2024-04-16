@@ -1,6 +1,6 @@
 //Print.cpp
-#include"stdafx.h"
-#include"Consts.h"
+
+#include"Print.h"
 
 void Print(int A[], int size)
 {

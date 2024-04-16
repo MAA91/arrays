@@ -1,7 +1,6 @@
 //Unique.cpp
 
-#include"stdafx.h"
-#include"Consts.h"
+#include"Unique.h"
 
 void Unique(int A[], int size, int min_zn, int max_zn)
 {

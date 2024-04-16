@@ -1,6 +1,7 @@
 //FillRand.h
 #pragma once
 
+#include"stdafx.h"
 #include"Consts.h"
 
 void FillRand(int A[], int size, int min_zn, int max_zn);

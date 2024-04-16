@@ -1,7 +1,6 @@
 //FillRand.cpp
 
-#include"stdafx.h"
-#include"Consts.h"
+#include"FillRand.h"
 
 void FillRand(int A[], int size, int min_zn, int max_zn)
 {

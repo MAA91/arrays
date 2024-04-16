@@ -1,5 +1,6 @@
 //shiftRight.h
 #pragma once
+
 #include"Consts.h"
 
 void shiftRight(int A[], int size, int shifts);

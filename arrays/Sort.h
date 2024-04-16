@@ -1,5 +1,6 @@
 //Sort.h
 #pragma once
+
 #include"Consts.h"
 
 void Sort(int A[], int size);

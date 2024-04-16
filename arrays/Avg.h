@@ -2,6 +2,7 @@
 #pragma once
 
 #include"Consts.h"
+#include"Sum.h"
 
 double Avg(int A[], int size);
 double Avg(int A[ROW][COL], int ROW, int COL);

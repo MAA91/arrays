@@ -1,6 +1,6 @@
 //Sort.cpp
 
-#include"Consts.h"
+#include"Sort.h"
 
 void Sort(int A[], int size)
 {

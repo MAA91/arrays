@@ -1,6 +1,7 @@
 //Print.h
 #pragma once
 
+#include"stdafx.h"
 #include"Consts.h"
 
 void Print(int A[], int size);

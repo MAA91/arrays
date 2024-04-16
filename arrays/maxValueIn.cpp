@@ -1,6 +1,6 @@
 //maxValueIn.cpp
 
-#include"Consts.h"
+#include"maxValueIn.h"
 
 int maxValueIn(int A[], int size)
 {

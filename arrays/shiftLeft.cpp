@@ -1,6 +1,6 @@
 //shiftLeft.cpp
 
-#include"Consts.h"
+#include"shiftLeft.h"
 
 void shiftLeft(int A[], int size, int shifts)
 {

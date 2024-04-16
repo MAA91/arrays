@@ -1,5 +1,6 @@
 //Avg.cpp
-#include"Sum.h"
+
+#include"Avg.h"
 
 double Avg(int A[], int size)
 {
