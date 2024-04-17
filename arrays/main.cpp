@@ -10,7 +10,6 @@
 #include"shiftRight.h"
 #include"Sort.h"
 #include"Unique.h"
-#include"Search.h"
 
 void main()
 {
@@ -19,7 +18,6 @@ void main()
 	char A[ROW][COL]{};
 	FillRand(A, ROW, COL);
 	Print(A, ROW, COL);
-	Search(A);
 	/*Sort(A);
 	Print(A, ROW, COL);*/
 }

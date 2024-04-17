@@ -25,7 +25,6 @@
     <ClCompile Include="maxValueIn.cpp" />
     <ClCompile Include="minValueIn.cpp" />
     <ClCompile Include="Print.cpp" />
-    <ClCompile Include="Search.cpp" />
     <ClCompile Include="shiftLeft.cpp" />
     <ClCompile Include="shiftRight.cpp" />
     <ClCompile Include="Sort.cpp" />
@@ -39,7 +38,6 @@
     <ClInclude Include="maxValueIn.h" />
     <ClInclude Include="minValueIn.h" />
     <ClInclude Include="Print.h" />
-    <ClInclude Include="Search.h" />
     <ClInclude Include="shiftLeft.h" />
     <ClInclude Include="shiftRight.h" />
     <ClInclude Include="Sort.h" />
