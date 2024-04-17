@@ -1,5 +1,6 @@
 ﻿#include"stdafx.h"
 #include"Functions.h"
+#include"Search.h"
 
 
 void main()
@@ -15,4 +16,5 @@ void main()
 	Print(A, SIZE);
 	shiftRight(A, SIZE, 8);
 	Print(A, SIZE);
+	Search(A);
 }
