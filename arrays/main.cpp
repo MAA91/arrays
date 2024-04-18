@@ -1,42 +1,13 @@
-﻿#include <iostream>
-
-using namespace std;
-
-const int SIZE = 10;
-
-template <typename T, typename T1 >
-void FillRand(T A[], int size, T1 min_zn, T1 max_zn);
-
-template <typename T>
-void Print(T A[], int size);
-
-template <typename T>
-T Sum(T A[], int size);
-
-template <typename T>
-double Avg(T A[], int size);
-
-template <typename T>
-T maxValueIn(T A[], int size);
-
-template <typename T>
-T minValueIn(T A[], int size);
-
-template <typename T>
-void shiftLeft(T A[], int size, int shifts);
-
-template <typename T>
-void shiftRight(T A[], int size, int shifts);
-
-template <typename T>
-void Search(T A[]);
-
+﻿#include "stdafx.h"
+#include "BaseFunction.h"
+#include "MathFunction.h"
+#include "shifts.h"
 
 void main()
 {
 	setlocale(0, "");
 	srand(time(NULL));
-	double A[SIZE]{};
+	int A[SIZE]{};
 	FillRand(A, SIZE, 0, 256);
 	Print(A, SIZE);
 	cout << Sum(A, SIZE) << endl;
@@ -49,6 +20,7 @@ void main()
 	Print(A, SIZE);
 	Search(A);
 }
+
 template <typename T, typename T1 >
 void FillRand(T A[], int size, T1 min_zn, T1 max_zn)
 {
@@ -62,6 +34,33 @@ void Print(T A[], int size)
 	for (int i = 0; i < size; i++)
 		cout << A[i] << " ";
 	cout << endl;
+}
+
+template <typename T>
+void Search(T A[])
+{
+	T BUF[SIZE]{};
+	int size_BUF{};
+	for (int i = 0; i < SIZE; i++)
+	{
+		bool flag = true;
+		for (int j = 0; j < size_BUF; j++)
+			if (A[i] == BUF[j])
+			{
+				flag = false;
+				break;
+			}
+		if (flag)
+		{
+			BUF[size_BUF++] = A[i];
+			int col{};
+			for (int j = i; j < SIZE; j++)
+				if (A[i] == A[j])
+					col++;
+			if (col != 1)
+				cout << "Элемент " << A[i] << " повторился " << col << " раз\n";
+		}
+	}
 }
 
 template <typename T>
@@ -120,32 +119,5 @@ void shiftRight(T A[], int size, int shifts)
 		for (int j = size - 1; j > 0; j--)
 			A[j] = A[j - 1];
 		A[0] = buf;
-	}
-}
-
-template <typename T>
-void Search(T A[])
-{
-	T BUF[SIZE]{};
-	int size_BUF{};
-	for (int i = 0; i < SIZE; i++)
-	{
-		bool flag = true;
-		for (int j = 0; j < size_BUF; j++)
-			if (A[i] == BUF[j])
-			{
-				flag = false;
-				break;
-			}
-		if (flag)
-		{
-			BUF[size_BUF++] = A[i];
-			int col{};
-			for (int j = i; j < SIZE; j++)
-				if (A[i] == A[j])
-					col++;
-			if (col != 1)
-				cout << "Элемент " << A[i] << " повторился " << col << " раз\n";
-		}
 	}
 }
