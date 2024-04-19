@@ -19,7 +19,10 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="BaseFunction.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="MathFunction.cpp" />
+    <ClCompile Include="shifts.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BaseFunction.h" />
