@@ -10,7 +10,7 @@ void main()
 {
 	setlocale(0, "");
 	srand(time(NULL));
-	int A[SIZE]{};
+	char A[SIZE]{};
 	FillRand(A, SIZE, 0, 256);
 	Print(A, SIZE);
 	cout << Sum(A, SIZE) << endl;
