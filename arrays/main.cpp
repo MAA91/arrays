@@ -12,9 +12,11 @@ void Print(T A[], int size);
 
 template <typename T>
 T Sum(T A[], int size);
+const char* Sum(char A[], int size);
 
 template <typename T>
 double Avg(T A[], int size);
+const char* Avg(char A[], int size);
 
 template <typename T>
 T maxValueIn(T A[], int size);
@@ -36,7 +38,7 @@ void main()
 {
 	setlocale(0, "");
 	srand(time(NULL));
-	double A[SIZE]{};
+	char A[SIZE]{};
 	FillRand(A, SIZE, 0, 256);
 	Print(A, SIZE);
 	cout << Sum(A, SIZE) << endl;
@@ -72,11 +74,19 @@ T Sum(T A[], int size)
 		sum += A[i];
 	return sum;
 }
+const char* Sum(char A[], int size)
+{
+	return "Не возможно суммировать символы";
+}
 
 template <typename T>
 double Avg(T A[], int size)
 {
 	return (double)Sum(A, size) / size;
+}
+const char* Avg(char A[], int size)
+{
+	return "Не возможно найти среднее арифметическое для типа char";
 }
 
 template <typename T>
